@@ -1,0 +1,138 @@
+{
+  "info": {
+    "_postman_id": "72ace467-4e26-4ef0-8f23-32474657c474",
+    "name": "Product",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "54487337",
+    "_collection_link": "https://go.postman.co/collection/54487337-72ace467-4e26-4ef0-8f23-32474657c474?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "agreagar",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"nombre\": \"samsung\",\r\n    \"codigo\": 108,\r\n    \"precio\": 1450.75,\r\n    \"stock\": 8\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8086/productos",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8086",
+          "path": [
+            "productos"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "listar",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"nombre\": \"samsung\",\r\n    \"codigo\": 108,\r\n    \"precio\": 1450.75,\r\n    \"stock\": 8\r\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8086/productos",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8086",
+          "path": [
+            "productos"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "actualizar",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"nombre\": \"samsung\",\r\n    \"codigo\": 108,\r\n    \"precio\": 1450.15,\r\n    \"stock\": 2\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8086/productos/108",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8086",
+          "path": [
+            "productos",
+            "108"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "buscar",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8086/productos/108",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8086",
+          "path": [
+            "productos",
+            "108"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "eliminar",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\r\n    \"nombre\": \"samsung\",\r\n    \"codigo\": 108,\r\n    \"precio\": 1450.15,\r\n    \"stock\": 2\r\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8086/productos/108",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8086",
+          "path": [
+            "productos",
+            "108"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
